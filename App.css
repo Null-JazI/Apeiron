@@ -1,0 +1,178 @@
+/* Add this to your main CSS file */
+
+/* Base styles for light mode */
+:root {
+  /* Main Colors */
+  --color-primary: #14846f;
+  
+  /* Secondary Colors */
+  --color-secondary-1: #29ba8e;
+  --color-secondary-2: #47e5b5;
+  
+  /* Accent Colors */
+  --color-accent-1: #ff8667;
+  --color-accent-2: #ffa400;
+  
+  /* Neutral Colors */
+  --color-neutral-1: #ffffff;
+  --color-neutral-2: #ffd8a2;
+  --color-neutral-3: #4a403b;
+  --color-neutral-4: #004548;
+  
+  /* Theme Colors - Light Mode */
+  --background-primary: var(--color-neutral-1);
+  --background-secondary: #f9f9f9;
+  --text-primary: var(--color-neutral-3);
+  --text-secondary: #666666;
+  --accent-color: var(--color-primary);
+  --accent-hover: var(--color-secondary-1);
+  --border-color: rgba(0, 0, 0, 0.1);
+  --card-bg: var(--color-neutral-1);
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Dark mode styles */
+.dark {
+  --background-primary: #1f1f1f;
+  --background-secondary: #161616;
+  --text-primary: var(--color-neutral-1);
+  --text-secondary: var(--color-neutral-2);
+  --accent-color: var(--color-secondary-1);
+  --accent-hover: var(--color-secondary-2);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --card-bg: #222222;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Apply styles to common elements */
+body {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--accent-color);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+/* Cards and containers */
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container, section {
+  background-color: var(--background-primary);
+  transition: background-color 0.3s ease;
+}
+
+/* Form elements */
+input, textarea, select {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--accent-color);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(20, 132, 111, 0.2);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-secondary-1);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-accent {
+  background-color: var(--color-accent-1);
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.btn-accent:hover {
+  background-color: var(--color-accent-2);
+}
+
+/* Custom sections */
+.hero-section {
+  background-color: var(--background-secondary);
+  padding: 5rem 0;
+}
+
+.dark .hero-section {
+  background: linear-gradient(rgba(0, 69, 72, 0.2), rgba(31, 31, 31, 0));
+}
+
+.footer {
+  background-color: var(--background-secondary);
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border-color);
+}
+
+/* Links and Highlight elements */
+.highlight {
+  color: var(--color-accent-1);
+}
+
+.dark .highlight {
+  color: var(--color-accent-2);
+}
+
+/* Tables */
+table {
+  border-color: var(--border-color);
+}
+
+th {
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+}
+
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.dark tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}

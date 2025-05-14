@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Apeiron/static/css/main.6beeecbe.css",
+    "main.js": "/Apeiron/static/js/main.eef93732.js",
+    "static/js/488.e75445ad.chunk.js": "/Apeiron/static/js/488.e75445ad.chunk.js",
+    "index.html": "/Apeiron/index.html",
+    "main.6beeecbe.css.map": "/Apeiron/static/css/main.6beeecbe.css.map",
+    "main.eef93732.js.map": "/Apeiron/static/js/main.eef93732.js.map",
+    "488.e75445ad.chunk.js.map": "/Apeiron/static/js/488.e75445ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6beeecbe.css",
+    "static/js/main.eef93732.js"
+  ]
+}
